@@ -1,0 +1,36 @@
+@import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
+
+
+
+:root {
+    --cyan: #0272a6;
+    --navy:  #00171F;
+    --neonblue: #56A7D3;
+    --gray: #697268;
+    --lavender: #685F74;
+    --white: #fff;
+    --transparent: transparent;
+}
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+@keyframes backgroundColorChange {
+    from {background: #000137;}
+    to  {background: #0272a6;}
+}
+
+@keyframes colorChange {
+    from {color: #00171F;}
+    to  {color: #56A7D3;}
+}
+
+
+@keyframes circuitAnimate {
+    from {filter: blur(5px);}
+    to  {filter: blur(0px);}
+}
+
+
+
