@@ -42,22 +42,24 @@ export const ServiceContainer = styled.div`
   flex: 1 0 20%;
   display: flex;
   margin: auto;
-  min-width: 200px;
-  max-width: 250px;
+  min-width: 250px;
+  max-width: 300px;
+  
+  margin: 0 10px;
   justify-content: center;
   align-content: center;
   flex-direction: column;
 
   @media screen and (max-width: 768px) {
-    flex: 1 0 20%;
-    min-width: 180px;
-    max-width: 180px;
+    flex: 1 0 45%;  
+    margin: 20px 10px;
   }
 
   @media screen and (max-width: 740px) {
     flex: 1 0 50%;
     min-width: 200px;
     max-width: 200px;
+    margin: 0 10px;
   }
 `
 
@@ -65,15 +67,18 @@ export const ServiceTitle = styled.div`
   font-family: Tomorrow, sans-serif;
   margin-bottom: 10px;
   font-size: 1rem;
-  padding: 5px;
+
   text-align: center;
   max-width: 220px;
-  max-height: 68px;
-  min-height: 68px;
+  max-height: 80px;
+  min-height: 80px;
   margin: auto;
+  font-weight: 600;
   display: block;
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
+    max-height: 50px;
+    min-height: 50px;
   }
 `
 
@@ -86,19 +91,20 @@ export const ServiceDescription = styled.div`
   max-height: 65px;
   min-height: 65px;
   margin: auto;
+  
   padding: 5px;
   display: block;
   max-width: 200px
 `
 
 export const ServiceImageContainer = styled.div`
-  max-height: 90px;
-  min-height: 90px;
+
 `
 export const ServiceImage = styled(Img)`
     margin: auto;
     display: block;
-    padding: 5px;
-    max-width: 80px; 
+    max-width: 120px; 
+    max-height: 120px;
+    min-height: 100px;
 `
 

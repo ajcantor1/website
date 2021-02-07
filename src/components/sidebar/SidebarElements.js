@@ -38,12 +38,9 @@ export const SidebarWrapper = styled.div`
 export const SidebarMenu = styled.ul`
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: (6, 80px);
+  grid-template-rows: repeat(2, 100px);
   text-align: center;
 
-  @media screen and (max-width: 480px) {
-    grid-template-rows: repeat(6, 60px);
-  }
 ` 
 export const SidebarLink = styled(ScrollLink)`
   display: flex;

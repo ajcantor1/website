@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Barlow|Tomorrow:400,700&display=swap");
 
-
+html {
+    overflow-y: auto;
+}
 
 :root {
     --cyan: #0272a6;

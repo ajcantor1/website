@@ -1,9 +1,30 @@
 import styled from 'styled-components';
 import Img from "gatsby-image"
-
+import { Link } from "gatsby"
 export const OuterAboutContainer = styled.div`
   min-height: 100vh;
   background-color: var(--cyan);
+`
+
+export const GalleryLink = styled(Link)`
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-style: dotted;
+  color: var(--white);
+  font-size: 12px;
+  font-weight: 600;
+  font-family: Tahoma, sans-serif;
+  &:visited {
+    text-decoration: underline;
+    color: var(--white);
+  }
+  &:hover {
+    text-decoration: underline;
+    color: var(--white);    
+  }
+  @media screen and (max-width: 768px) {
+    margin-top: 24px;
+  }
 `
 
 export const ProfileContainer = styled.div`
@@ -21,7 +42,7 @@ export const ProfileContainer = styled.div`
 
   @media screen and (max-width: 720px) {
     min-height: 480px;
-    max-height: 500px;
+    max-height: 520px;
     max-width: 220px;
     min-width: 220px;
   }
@@ -41,6 +62,19 @@ export const AboutContainer = styled.div`
     margin-top: 75px;
     margin-right: 25px;
     flex-direction: row-reverse;
+  }
+
+  @media screen and (max-width: 768px) {
+    >:nth-child(1){
+    
+      margin: 20px auto; 
+    }
+    
+    >:nth-child(2){
+
+      margin: 0px auto;
+      margin-top: 100px;
+    }
   }
 
   @media screen and (max-width: 720px) {
@@ -114,7 +148,7 @@ export const Summary = styled.div`
   margin: 10px;
   padding: 0;
   text-decoration: none;
-  font-size: 14px;
+  font-size: 12px;
   text-align: left;
   line-height: 1rem;
   max-width: 400px;
