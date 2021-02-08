@@ -126,7 +126,7 @@ export const ServiceButton = styled(ScrollLink)`
   background-color: var(--neonblue);
   color: white;
   cursor: pointer;
-  padding: 8px 8px;
+  padding: 8px 12px;
   position: relative;
   font-family: Tomorrow, sans-serif;
   font-size: .85rem;
@@ -134,11 +134,17 @@ export const ServiceButton = styled(ScrollLink)`
   max-width: 300px;
   display: block;
   margin:  0 auto;
-  margin-top: -80px;
-  clip-path: polygon(92% 0, 100% 25%, 100% 100%, 8% 100%, 0% 75%, 0 0);
+  margin-top: -70px;
+  border-radius: 25px;
 
+  @media screen and (max-width: 768px) {
+    margin-top: -200px;
+  }
 
- 
+  @media screen and (max-width: 720px) {
+    margin-top: -80px;
+  }
+
 `
 
 

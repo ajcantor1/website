@@ -58,7 +58,7 @@ const Services = ({id}) => {
     },
     {
       title: "Sleek & Responsive Web Applications",
-      description: "For your ecommerce business or to be internal used within your business",
+      description: "For your ecommerce business or to be internally used within your business",
       altname: "Sleek & Responsive Web Applications"
     },
     {

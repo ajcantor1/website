@@ -34,7 +34,7 @@ const defaultTitle = data.site.siteMetadata?.title
       htmlAttributes={{
         lang,
       }}
-      title={data.site.siteMetadata.title.concat('|').concat(title)}
+      title={data.site.siteMetadata.title.concat(title)}
 
       meta={[
         {
