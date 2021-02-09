@@ -5,14 +5,13 @@ import { Link as ScrollLink } from 'react-scroll'
 
 export const Nav = styled.nav`
   font-family: Tomorrow, sans-serif;
-  background-color: ${({scrollNav}) => (scrollNav ? 'var(--navy)' :  'var(--transparent)')};
+  background-color: var(--navy);
   
   box-shadow: ${({scrollNav}) => (scrollNav ? '0px 4px 4px 0px rgba(0,10,70,0.5);' :  '0px 0px 0px 0px rgba(0,10,70,0.8);')};
   height: 80px;
-  margin-top: -80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
+
+  width: 100%;
   font-size: 1rem;
   position: sticky;
   top: 0;
@@ -21,15 +20,21 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+
 `
 
-
 export const Circuit = styled.div`
-  margin-right: 80px;
+  
+  min-width: 80%;
+  flex: 1 0.9 80px;
   img {
-      height: 80px;
       animation: circuitAnimate  3s linear;
+      
   }  
+  @media screen and (min-width: 1400px) {
+    width: 200px;
+    flex: 1 0 150px;
+  }
 `
 
 export const NavContainer = styled.div`
@@ -39,7 +44,7 @@ export const NavContainer = styled.div`
   z-index: 1;
   width: 100%;
   padding-right: 24px;
-  max-width: 1100px;
+
 `
 export const NavLogo = styled(Link)`
   color: #141414;
@@ -91,4 +96,9 @@ export const NavLinks = styled(ScrollLink)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
+
+  @media screen and (min-width: 1400px) {
+    padding: 0 2rem;
+    font-size: 1.2rem;
+  }
 `

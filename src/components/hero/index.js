@@ -49,16 +49,16 @@ const Hero = () => {
             <CompanyDescription>
             Breathing life into your Business Ideas with our Computing Wizardry and Aesthetically Pleasing Designs
           </CompanyDescription>
-        
+          <ServiceButton 
+            to='services' smooth={true} duration={700} 
+            offset={-100} spy={true} >
+            What <i><b><u>Can</u></b></i> we do for you?
+          </ServiceButton>      
     
         </Landing>
 
       </TitleContainer>
-      <ServiceButton 
-        to='services' smooth={true} duration={700} 
-        offset={-100} spy={true} >
-        What <i><b><u>Can</u></b></i> we do for you?
-      </ServiceButton>
+
       </HeroContainer>
     </>
       

@@ -2,19 +2,20 @@ import styled from 'styled-components';
 import { Link as ScrollLink } from 'react-scroll'
 
 export const HeroContainer = styled.div`
-  padding-top: 100px;
+
   background-color: var(--navy);
   display: flex;
-  width: 100%;
-  height: 100vh;
+  
+  max-height: 800px;
+  min-height: 600px;
   flex-direction: column;
+
 `
 
 export const TitleContainer = styled.div`
   position: relative;
   display: flex;
   flex-direction: row;
-  height: 60vh;
   align-items: center;
 
   @media screen and (max-width: 960px) {
@@ -22,9 +23,8 @@ export const TitleContainer = styled.div`
   }
 `
 export const Landing = styled.div`
-  flex: 1;
+  margin: 0 auto;
 
-  margin-left: 1%;
 `
 
 export const Ampersand = styled.div`
@@ -36,7 +36,6 @@ export const Ampersand = styled.div`
 
 export const Design = styled.div`
   vertical-align:bottom;
- 
 `
 
 export const Title = styled.div`
@@ -47,16 +46,21 @@ export const Title = styled.div`
   line-height: 0.8;
   letter-spacing: -1px;
   display: flex;
-  max-width: 500px;
+  max-width: 400px;
   margin: 0 auto;
-  
-  
+  @media screen and (max-width: 768px) {
+    margin: 100px auto;
+    padding: auto;   
+  }
 `
 
 export const LastName = styled.div`
   font-size: 4rem;
   color: var(--neonblue);
   justify-content: center;
+  @media screen and (max-width: 768px) {
+    margin-left: 10px;
+  }
 `
 
 export const RemainingTitle = styled.div`
@@ -71,6 +75,7 @@ export const RemainingTitle = styled.div`
 
 
 export const IconSide = styled.div`
+  padding-left: 10px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -86,6 +91,9 @@ export const IconSide = styled.div`
           color: var(--neonblue);
       }
   
+  @media screen and (min-width: 1400px) {
+    padding-left: 50px;
+  }
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -100,7 +108,6 @@ export const CompanyDescription = styled.div`
   font-size: 1rem;
   max-width: 500px;
   
-
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
     max-width: 450px;
@@ -108,10 +115,9 @@ export const CompanyDescription = styled.div`
   }
 
   @media screen and (max-width: 720px) {
-    font-size: 0.9rem;
+    font-size: 0.8rem;
     max-width: 450px;
-    margin: 20px 0;
-    margin-left: 10px; 
+    margin-left: 10px;
   }
 `
 
@@ -131,19 +137,10 @@ export const ServiceButton = styled(ScrollLink)`
   font-family: Tomorrow, sans-serif;
   font-size: .85rem;
   text-transform: uppercase;
-  max-width: 300px;
+  max-width: 250px;
   display: block;
   margin:  0 auto;
-  margin-top: -70px;
   border-radius: 25px;
-
-  @media screen and (max-width: 768px) {
-    margin-top: -200px;
-  }
-
-  @media screen and (max-width: 720px) {
-    margin-top: -80px;
-  }
 
 `
 

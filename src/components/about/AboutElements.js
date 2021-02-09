@@ -2,8 +2,12 @@ import styled from 'styled-components';
 import Img from "gatsby-image"
 import { Link } from "gatsby"
 export const OuterAboutContainer = styled.div`
-  min-height: 100vh;
+
   background-color: var(--cyan);
+  
+  @media screen and (min-width: 1400px) {
+    height: 600px;
+  }
 `
 
 export const GalleryLink = styled(Link)`
@@ -43,8 +47,15 @@ export const ProfileContainer = styled.div`
   @media screen and (max-width: 720px) {
     min-height: 480px;
     max-height: 520px;
-    max-width: 220px;
+    max-width: 300px;
     min-width: 220px;
+  }
+
+  @media screen and (max-width: 768px) {
+    min-height: 480px;
+    max-height: 520px;
+    max-width: 200px;
+    min-width: 200px;
   }
 `
 export const AboutContainer = styled.div`
@@ -56,9 +67,14 @@ export const AboutContainer = styled.div`
     margin-bottom: 25px;
     margin-left: 25px;
     flex-direction: row;
+
+    @media screen and (min-width: 1400px) {
+      margin-top: 120px;
+    }
   }
 
   >:nth-child(2){
+    margin-bottom: 20px;
     margin-top: 75px;
     margin-right: 25px;
     flex-direction: row-reverse;

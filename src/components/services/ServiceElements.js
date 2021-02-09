@@ -3,21 +3,31 @@ import Img from "gatsby-image"
 
 
 export const ServicesContainer = styled.div`
-  min-height: 45vh;
+  
+
+  margin-bottom: 40px;
   background-color: var(--white);
+
+  @media screen and (min-width: 1400px) {
+    max-height: 400px;
+  }
+  @media screen and (max-width: 768px) {
+    min-height: 400px;
+    max-height: 850px;
+  }
 `
 
 export const ServicesFlexBox = styled.div`
   max-width: 1100px;
   margin: auto;
-  margin-top: 5vh;
   display: flex;
   flex-flow: row wrap;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
 
-  @media screen and (max-width: 768px) {
-    margin-top: 10vh;
+  @media screen and (min-width: 1400px) {
+    max-width: 1400px;
   }
 `
 export const WhatWeDo = styled.div`
@@ -27,14 +37,17 @@ export const WhatWeDo = styled.div`
   font-size: 1.8rem;
   line-height: 1em;
   font-weight: 700;
-  padding: 50px 150px;
+  padding: 20px 150px;
 
   @media screen and (max-width: 768px) {
     padding: 20px 20px;
     font-size: 1rem;
     line-height: 1em;
   }
-
+  @media screen and (min-width: 1400px) {
+    font-size: 2.2rem;
+    line-height: 1.2em;
+  }
 
 `
 
@@ -50,9 +63,16 @@ export const ServiceContainer = styled.div`
   align-content: center;
   flex-direction: column;
 
+
   @media screen and (max-width: 768px) {
     flex: 1 0 45%;  
     margin: 20px 10px;
+  }
+  @media screen and (min-width: 1400px) {
+    flex: 1 0 60%;  
+    margin: 20px 10px;
+    min-width: 300px;
+    max-width: 325px;
   }
 
   @media screen and (max-width: 740px) {
@@ -75,10 +95,17 @@ export const ServiceTitle = styled.div`
   margin: auto;
   font-weight: 600;
   display: block;
+
   @media screen and (max-width: 768px) {
     font-size: 0.8rem;
     max-height: 50px;
     min-height: 50px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 1.2rem;
+    max-height: 90px;
+    min-height: 90px;
   }
 `
 
@@ -90,21 +117,37 @@ export const ServiceDescription = styled.div`
   text-align: center;
   max-height: 65px;
   min-height: 65px;
-  margin: auto;
-  
+  margin: auto; 
   padding: 5px;
   display: block;
-  max-width: 200px
+  max-width: 200px;
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 10px;
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 280px;
+  }
+
+
 `
 
 export const ServiceImageContainer = styled.div`
 
 `
 export const ServiceImage = styled(Img)`
-    margin: auto;
-    display: block;
-    max-width: 120px; 
-    max-height: 120px;
-    min-height: 100px;
+  margin: auto;
+  display: block;
+  max-width: 120px; 
+  max-height: 120px;
+  min-height: 100px;
+
+
+  @media screen and (min-width: 1400px) {
+
+    max-width: 160px; 
+    max-height: 160px;
+    min-height: 140px;
+  }
 `
 
