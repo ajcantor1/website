@@ -5,11 +5,14 @@ export const HeroContainer = styled.div`
 
   background-color: var(--navy);
   display: flex;
-  
-  max-height: 800px;
+  max-height: 900px;
   min-height: 600px;
   flex-direction: column;
 
+  @media screen and (min-width: 1400px) {
+    max-height: 1000px;
+    min-height: 900px;
+  }
 `
 
 export const TitleContainer = styled.div`
@@ -17,13 +20,16 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+  @media screen and (max-width: 768px) {
+    margin: 100px auto;
+    padding: auto;   
+  }
 `
 export const Landing = styled.div`
-  margin: 0 auto;
+  margin: auto;
 
 `
 
@@ -48,10 +54,7 @@ export const Title = styled.div`
   display: flex;
   max-width: 400px;
   margin: 0 auto;
-  @media screen and (max-width: 768px) {
-    margin: 100px auto;
-    padding: auto;   
-  }
+
 `
 
 export const LastName = styled.div`
@@ -132,12 +135,13 @@ export const ServiceButton = styled(ScrollLink)`
   background-color: var(--neonblue);
   color: white;
   cursor: pointer;
-  padding: 8px 12px;
+  padding: 8px 10px;
   position: relative;
   font-family: Tomorrow, sans-serif;
   font-size: .85rem;
   text-transform: uppercase;
-  max-width: 250px;
+  max-width: 245px;
+  text-align: center;
   display: block;
   margin:  0 auto;
   border-radius: 25px;

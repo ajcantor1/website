@@ -4,7 +4,6 @@ import { Link } from "gatsby"
 export const OuterImageContainer = styled.div`
   width: 100%;
   min-height: 100vh;
- 
   background-image: linear-gradient(to bottom, var(--cyan), var(--navy));
   padding: 20px;
 `

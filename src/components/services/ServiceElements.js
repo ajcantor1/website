@@ -9,7 +9,8 @@ export const ServicesContainer = styled.div`
   background-color: var(--white);
 
   @media screen and (min-width: 1400px) {
-    max-height: 400px;
+    min-height: 500px;
+    max-height: 800px;
   }
   @media screen and (max-width: 768px) {
     min-height: 400px;
