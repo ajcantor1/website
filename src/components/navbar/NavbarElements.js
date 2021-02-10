@@ -20,7 +20,9 @@ export const Nav = styled.nav`
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
-
+  @media screen and (min-width: 1400px) {
+    height: 120px;
+  }
 `
 
 export const Circuit = styled.div`

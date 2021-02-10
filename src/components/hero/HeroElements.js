@@ -20,6 +20,7 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  margin: 50px 0;
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
@@ -27,21 +28,32 @@ export const TitleContainer = styled.div`
     margin: 100px auto;
     padding: auto;   
   }
+  @media screen and (min-width: 1400px) {
+    font-size: 1.4rem;
+    margin: 120px 0;
+  }
 `
 export const Landing = styled.div`
-  margin: auto;
+  margin: auto 400px;
+
+  @media screen and (max-width: 768px) {
+    margin: auto; 
+  }
 
 `
 
 export const Ampersand = styled.div`
-
     font-size: 1.1rem;
     vertical-align:top; 
     font-weight: 700; 
+
+    @media screen and (min-width: 1400px) {
+      font-size: 1.6rem;
+    }
 `
 
 export const Design = styled.div`
-  vertical-align:bottom;
+  vertical-align: bottom;
 `
 
 export const Title = styled.div`
@@ -55,6 +67,10 @@ export const Title = styled.div`
   max-width: 400px;
   margin: 0 auto;
 
+  @media screen and (min-width: 1400px) {
+    font-size: 1.4rem;
+    line-height: 1;
+  }
 `
 
 export const LastName = styled.div`
@@ -63,6 +79,10 @@ export const LastName = styled.div`
   justify-content: center;
   @media screen and (max-width: 768px) {
     margin-left: 10px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 8rem;
+    margin-left: 0px;
   }
 `
 
@@ -73,6 +93,11 @@ export const RemainingTitle = styled.div`
   text-align: left;
   margin-left: 10px;
   margin-top: 10px;
+
+  @media screen and (min-width: 1400px) {
+    margin-top: 32px;
+    font-size: 1.8rem;
+  }
 `
 
 
@@ -110,6 +135,14 @@ export const CompanyDescription = styled.div`
   color: var(--gray);
   font-size: 1rem;
   max-width: 500px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 1.3rem;
+    max-width: 600px;
+    margin: 20px 0;
+    margin-left: 250px;
+    font-weight: 600;
+  }
   
   @media screen and (max-width: 768px) {
     font-size: 0.9rem;
@@ -145,6 +178,15 @@ export const ServiceButton = styled(ScrollLink)`
   display: block;
   margin:  0 auto;
   border-radius: 25px;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 1.3rem;
+    max-width: 380px;
+    padding: 20px 16px;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-left: 350px;
+  }
 
 `
 

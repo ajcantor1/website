@@ -6,7 +6,7 @@ export const OuterAboutContainer = styled.div`
   background-color: var(--cyan);
   
   @media screen and (min-width: 1400px) {
-    height: 600px;
+    height: 700px;
   }
 `
 
@@ -28,6 +28,9 @@ export const GalleryLink = styled(Link)`
   }
   @media screen and (max-width: 768px) {
     margin-top: 24px;
+  }
+  @media screen and (min-width: 1400px) {
+    font-size: 16px;
   }
 `
 
@@ -56,6 +59,14 @@ export const ProfileContainer = styled.div`
     max-height: 520px;
     max-width: 200px;
     min-width: 200px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 16px;
+    min-height: 220px;
+    max-height: 220px;
+    max-width: 820px;
+    min-width: 620px;
   }
 `
 export const AboutContainer = styled.div`
@@ -147,6 +158,10 @@ export const Name = styled.h1`
   font-size: 1.5rem;
   width: 100%;
   font-weight: 600;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 2rem;
+  }
 `
 
 export const Title = styled.h2`
@@ -158,6 +173,9 @@ export const Title = styled.h2`
   font-size: 1rem;
   width: 100%;
   font-weight: 600;
+  @media screen and (min-width: 1400px) {
+    font-size: 1.5rem;
+  }
 `
 
 export const Summary = styled.div`
@@ -170,4 +188,10 @@ export const Summary = styled.div`
   max-width: 400px;
   max-height: 100px;
   font-weight: 600;
+  @media screen and (min-width: 1400px) {
+    font-size: 1rem;
+    line-height: 1rem;
+    max-width: 500px;
+    max-height: 120px;
+  }
 `
