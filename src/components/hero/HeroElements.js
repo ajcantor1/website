@@ -13,6 +13,11 @@ export const HeroContainer = styled.div`
     max-height: 1000px;
     min-height: 900px;
   }
+
+  @media screen and (max-width: 768px) {
+    max-height: 100vh;
+    min-height: 100vh; 
+  }
 `
 
 export const TitleContainer = styled.div`
