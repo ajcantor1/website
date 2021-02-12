@@ -30,7 +30,8 @@ export const TitleContainer = styled.div`
     transition: 0.8s all ease;
   }
   @media screen and (max-width: 768px) {
-    margin: 100px auto;
+    margin: 0 auto;
+    margin-top: 25%;
     padding: auto;   
   }
   @media screen and (min-width: 1400px) {
