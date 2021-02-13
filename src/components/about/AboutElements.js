@@ -70,7 +70,7 @@ export const ProfileContainer = styled.div`
   }
 `
 export const AboutContainer = styled.div`
-  padding: 20px;
+  padding: 25px;
   margin: 0 50px;
 
   >:nth-child(1){    
@@ -134,9 +134,8 @@ export const ProfilePicture = styled(Img)`
   background-color: var(--navy);
 
   @media screen and (max-width: 720px) {
-    margin: 10px auto;
+    margin: 3px auto;
   }
-
 
 `
 

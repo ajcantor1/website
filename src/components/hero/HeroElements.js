@@ -31,7 +31,7 @@ export const TitleContainer = styled.div`
   }
   @media screen and (max-width: 768px) {
     margin: 0 auto;
-    margin-top: 25%;
+    margin-top: 50%;
     padding: auto;   
   }
   @media screen and (min-width: 1400px) {
@@ -53,9 +53,9 @@ export const Ampersand = styled.div`
     vertical-align:top; 
     font-weight: 700; 
 
-    @media screen and (min-width: 1400px) {
-      font-size: 1.6rem;
-    }
+  @media screen and (min-width: 1400px) {
+    font-size: 1.6rem;
+  }
 `
 
 export const Design = styled.div`
@@ -77,6 +77,9 @@ export const Title = styled.div`
     font-size: 1.4rem;
     line-height: 1;
   }
+  @media screen and (max-width: 768px) {
+    font-size: 1rem;
+  }
 `
 
 export const LastName = styled.div`
@@ -85,11 +88,13 @@ export const LastName = styled.div`
   justify-content: center;
   @media screen and (max-width: 768px) {
     margin-left: 10px;
+    font-size: 4rem;
   }
   @media screen and (min-width: 1400px) {
     font-size: 8rem;
     margin-left: 0px;
   }
+
 `
 
 export const RemainingTitle = styled.div`
@@ -103,6 +108,9 @@ export const RemainingTitle = styled.div`
   @media screen and (min-width: 1400px) {
     margin-top: 32px;
     font-size: 1.8rem;
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 1.2rem;
   }
 `
 
@@ -138,7 +146,7 @@ export const CompanyDescription = styled.div`
 
   vertical-align:middle;
   margin: 20px auto;
-  color: var(--gray);
+  color: var(--white);
   font-size: 1rem;
   max-width: 500px;
 
@@ -151,14 +159,14 @@ export const CompanyDescription = styled.div`
   }
   
   @media screen and (max-width: 768px) {
-    font-size: 0.9rem;
-    max-width: 450px;
+    font-size: 1rem;
+    max-width: 380px;
     margin: 20px auto; 
   }
 
   @media screen and (max-width: 720px) {
-    font-size: 0.8rem;
-    max-width: 450px;
+    font-size: 1rem;
+    max-width: 360px;
     margin-left: 10px;
   }
 `
