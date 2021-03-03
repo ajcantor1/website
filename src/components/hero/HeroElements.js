@@ -26,6 +26,7 @@ export const TitleContainer = styled.div`
   flex-direction: row;
   align-items: center;
   margin: auto;
+  width: 100%;
   margin-bottom: 20%;
 
   @media screen and (max-width: 960px) {
@@ -41,8 +42,8 @@ export const TitleContainer = styled.div`
   }
 `
 export const Landing = styled.div`
-  margin: auto 400px;
-
+ 
+  flex: 1 0 auto;
   @media screen and (max-width: 768px) {
     margin: auto; 
   }
@@ -61,8 +62,8 @@ export const Title = styled.div`
   grid-template-columns: auto auto;
 
   @media screen and (max-width: 720px) {
-    font-size: 12px;
-    max-width: 280px;
+    font-size: 14px;
+    max-width: 240px;
     grid-template-rows: 12px 12px 12px;
   }
 
@@ -79,11 +80,11 @@ export const LastName = styled.div`
 
   @media screen and (max-width: 720px) {
     font-size: 54px;
-    padding-right: 0px;
+    padding-right: 8px;
   }
 `
 export const IconSide = styled.div`
-  padding-left: 10px;
+  margin-left: 10px;
   margin-top: 100px;
   display: flex;
   flex-direction: column;
@@ -113,24 +114,24 @@ export const CompanyDescription = styled.div`
   vertical-align:middle;
   margin: 20px auto;
   color: var(--white);
-  font-size: 1rem;
+  font-size: 20px;
   max-width: 500px;
 
   @media screen and (min-width: 1400px) {
-    font-size: 1.2rem;
+    font-size: 20px;
     max-width: 600px;
-    margin: 1s0px 0;
+    margin: 100px 0;
     font-weight: 600;
   }
   
   @media screen and (max-width: 768px) {
-    font-size: 1rem;
+    font-size: 16px;
     max-width: 360px;
     margin: 20px auto; 
   }
 
   @media screen and (max-width: 720px) {
-    font-size: 1rem;
+    font-size: 16px;
     max-width: 300px;
     margin-left: auto;
   }
