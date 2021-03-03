@@ -9,7 +9,6 @@ exports.components = {
   "component---src-pages-404-js": hot(preferDefault(require("/home/jeremy/Desktop/projects/website/website/src/pages/404.js"))),
   "component---src-pages-gallery-js": hot(preferDefault(require("/home/jeremy/Desktop/projects/website/website/src/pages/gallery.js"))),
   "component---src-pages-index-js": hot(preferDefault(require("/home/jeremy/Desktop/projects/website/website/src/pages/index.js"))),
-  "component---src-pages-page-2-js": hot(preferDefault(require("/home/jeremy/Desktop/projects/website/website/src/pages/page-2.js"))),
   "component---src-pages-using-typescript-tsx": hot(preferDefault(require("/home/jeremy/Desktop/projects/website/website/src/pages/using-typescript.tsx")))
 }
 

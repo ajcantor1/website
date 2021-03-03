@@ -4,7 +4,8 @@ module.exports = {
     description:
       "Smart automated systems sleek design",
     url: "https://www.cantorcomputing.com",
-    author: "Jeremy Cantor"
+    author: "Jeremy Cantor",
+    image: `src/images/robot-icon.png`
   },
   plugins: [
     `gatsby-plugin-react-helmet`,

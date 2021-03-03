@@ -1,83 +1,70 @@
-/**
- * SEO component that queries for data with
- *  Gatsby's useStaticQuery React hook
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
 
 import React from "react"
-import PropTypes from "prop-types"
 import { Helmet } from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import { StaticQuery, graphql } from "gatsby"
 
-function SEO({ description, lang, meta, title }) {
-
-
-  const data = useStaticQuery(graphql`
-  query {
+const detailsQuery = graphql`
+  query DefaultSEOQuery {
     site {
       siteMetadata {
         title
         description
-        url
         author
+        image
       }
     }
-  }
-  `)
-
-const metaDescription = description || data.site.siteMetadata.description
-const defaultTitle = data.site.siteMetadata?.title
-
+  }`
+const Seo = ({description, keywords, title, image, url, author}) => {
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={data.site.siteMetadata.title.concat(title)}
-
-      meta={[
-        {
-          name: `description`,
-          content: data.site.siteMetadata.description,
-        },
-        {
-          property: `og:title`,
-          content: data.site.siteMetadata.title,
-        },
-        {
-          property: `url`,
-          content: data.site.siteMetadata.url,
-        },
-        {
-          property: `author`,
-          content: data.site.siteMetadata.author,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          property: `og:site`,
-          content: data.site.siteMetadata.title,
-        }
-      ].concat(meta)}
-    />
+    <StaticQuery query={detailsQuery}
+    render={data => {
+      const metaDescription = description || data.site.siteMetadata.description
+      const metaTitle = title || data.site.siteMetadata.title
+      const metaAuthor = author || data.site.siteMetadata.author
+      const metaUrl = url || data.site.siteMetadata.url
+      const metaImage = image || data.site.siteMetadata.image
+      const metaKeywords = keywords || ["web design", "deep learning", "freelance"]
+      return (
+        <Helmet
+          title={title}
+          meta={[
+            {
+              name: `description`,
+              content: metaDescription
+            },
+            {
+              property: `og:title`,
+              content: metaTitle
+            },
+            {
+              property: `og:author`,
+              content: metaAuthor
+            },
+            {
+              property: `og:description`,
+              content: metaDescription
+            }, 
+            {
+              property: `og:type`,
+              content: `website`
+            },
+            {
+              property: `og:image`,
+              content: metaImage
+            },
+            {
+              property: `og:url`,
+              content: metaUrl
+            }
+          ].concat(
+            metaKeywords && metaKeywords.length > 0 ? {
+              name: `keyword`,
+              content: metaKeywords.join(`, `)
+            } : []
+          )}
+        />
+      )
+    }}/>
   )
 }
-
-SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
-  description: ``,
-  title: ``,
-}
-
-SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
-  title: PropTypes.string.isRequired,
-}
-
-export default SEO
+export default Seo
