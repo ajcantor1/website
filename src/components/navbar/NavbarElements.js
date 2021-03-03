@@ -27,7 +27,7 @@ export const Nav = styled.nav`
 
 export const Circuit = styled.div`
   
-  min-width: 80%;
+
   flex: 1 0.9 80px;
   img {
       animation: circuitAnimate  3s linear;
@@ -44,7 +44,6 @@ export const NavContainer = styled.div`
   justify-content: flex-end;
   height: 80px;
   z-index: 1;
-  width: 100%;
   padding-right: 24px;
 
 `
@@ -76,8 +75,7 @@ export const MobileIcon = styled.div`
 
 export const NavMenu = styled.ul`
   display: flex;
-  right: 0;
-  
+  width: 100%;
   list-style: none;
   text-align: center;
 
@@ -93,14 +91,14 @@ export const NavLinks = styled(ScrollLink)`
   color: #fff;
   display: flex;
   align-items: center;
-  
   text-decoration: none;
-  padding: 0 1rem;
+  padding: 0 20px;
+  margin: 0 10px;
   height: 100%;
   cursor: pointer;
 
   @media screen and (min-width: 1400px) {
-    padding: 0 2rem;
+    padding: 0 0.5rem;
     font-size: 1.2rem;
   }
 `

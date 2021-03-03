@@ -25,17 +25,18 @@ export const TitleContainer = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin: 50px 0;
+  margin: auto;
+  margin-bottom: 20%;
+
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
   }
+
   @media screen and (max-width: 768px) {
-    margin: 0 auto;
-    margin-top: 50%;
+    margin: auto;
     padding: auto;   
   }
   @media screen and (min-width: 1400px) {
-    font-size: 1.4rem;
     margin: 120px 0;
   }
 `
@@ -45,77 +46,42 @@ export const Landing = styled.div`
   @media screen and (max-width: 768px) {
     margin: auto; 
   }
-
-`
-
-export const Ampersand = styled.div`
-    font-size: 1.1rem;
-    vertical-align:top; 
-    font-weight: 700; 
-
-  @media screen and (min-width: 1400px) {
-    font-size: 1.6rem;
-  }
-`
-
-export const Design = styled.div`
-  vertical-align: bottom;
 `
 
 export const Title = styled.div`
   font-family: Tahoma, sans-serif;
   color: var(--lavender);
-  font-size: 0.9rem;
+  font-size: 16px;
   font-weight: 600;
-  line-height: 0.8;
   letter-spacing: -1px;
-  display: flex;
-  max-width: 400px;
+  display: grid;
   margin: 0 auto;
+  max-width: 320px;
+  grid-template-rows: 16px 16px 16px;
+  grid-template-columns: auto auto;
 
-  @media screen and (min-width: 1400px) {
-    font-size: 1.4rem;
-    line-height: 1;
+  @media screen and (max-width: 720px) {
+    font-size: 12px;
+    max-width: 280px;
+    grid-template-rows: 12px 12px 12px;
   }
-  @media screen and (max-width: 768px) {
-    font-size: 1rem;
-  }
+
 `
 
 export const LastName = styled.div`
-  font-size: 4rem;
+  line-height: 0.75;
+  font-size: 66px;
   color: var(--neonblue);
-  justify-content: center;
-  @media screen and (max-width: 768px) {
-    margin-left: 10px;
-    font-size: 4rem;
-  }
-  @media screen and (min-width: 1400px) {
-    font-size: 8rem;
-    margin-left: 0px;
-  }
+  grid-row: 1;
+  grid-row-start: 1;
+  grid-row-end: span 3;
+  padding-right: 12px;
 
-`
-
-export const RemainingTitle = styled.div`
-  display:flex;
-  height: 100%;
-  flex-direction: column;
-  text-align: left;
-  margin-left: 10px;
-  margin-top: 10px;
-
-  @media screen and (min-width: 1400px) {
-    margin-top: 32px;
-    font-size: 1.8rem;
-  }
-  @media screen and (max-width: 768px) {
-    font-size: 1.2rem;
+  @media screen and (max-width: 720px) {
+    font-size: 54px;
+    padding-right: 0px;
   }
 `
-
-
-
 export const IconSide = styled.div`
   padding-left: 10px;
   margin-top: 100px;
@@ -151,23 +117,22 @@ export const CompanyDescription = styled.div`
   max-width: 500px;
 
   @media screen and (min-width: 1400px) {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     max-width: 600px;
-    margin: 20px 0;
-    margin-left: 250px;
+    margin: 1s0px 0;
     font-weight: 600;
   }
   
   @media screen and (max-width: 768px) {
     font-size: 1rem;
-    max-width: 380px;
+    max-width: 360px;
     margin: 20px auto; 
   }
 
   @media screen and (max-width: 720px) {
     font-size: 1rem;
-    max-width: 360px;
-    margin-left: 10px;
+    max-width: 300px;
+    margin-left: auto;
   }
 `
 
@@ -199,9 +164,7 @@ export const ServiceButton = styled(ScrollLink)`
     padding: 20px 16px;
     font-weight: 600;
     margin-top: 20px;
-    margin-left: 350px;
   }
-
 `
 
 

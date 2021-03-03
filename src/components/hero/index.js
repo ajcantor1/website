@@ -5,12 +5,9 @@ import {
   TitleContainer,
   Landing,
   LastName,
-  Ampersand,
-  Design,
   Title,
   IconSide,
   CompanyDescription,
-  RemainingTitle,
   ServiceButton
 } from './HeroElements';
 
@@ -23,8 +20,6 @@ const Hero = () => {
     return () => clearTimeout(timeout);
   }, []);
 
-
-    
   return(
     <>
       <HeroContainer>
@@ -37,16 +32,13 @@ const Hero = () => {
           <IconInstagram/>
         </IconSide>
         <Landing>
-     
-            <Title>
-              <LastName>Cantor</LastName>
-              <RemainingTitle>
-                <div>Computing</div>
-                <Ampersand>&</Ampersand><Design>Design</Design>
-              </RemainingTitle>
-              
-            </Title>
-            <CompanyDescription>
+          <Title>
+            <LastName>Cantor</LastName>
+            <div>Computing</div>
+            <div>&</div>
+            <div>Design</div>
+          </Title>
+          <CompanyDescription>
             Breathing life into your Business Ideas with our Computing Wizardry and Aesthetically Pleasing Designs
           </CompanyDescription>
           <ServiceButton 
