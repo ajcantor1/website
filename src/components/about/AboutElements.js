@@ -124,17 +124,18 @@ export const AboutContainer = styled.div`
 `
 
 export const ProfilePicture = styled(Img)`
-  flex: 1 0 250px;
-  max-width: 180px;
-  min-width: 180px;
-  min-height: 180px;
-  max-height: 180px;
-  margin: auto 10px;
+  flex: 1 0;
+  max-width: 150px;
+  min-width: 150px;
+  min-height: 150px;
+  max-height: 150px;
   border: 10px solid var(--neonblue);
   background-color: var(--navy);
+  margin: auto 15px;
 
-  @media screen and (max-width: 720px) {
-    margin: 3px auto;
+
+  @media screen and (max-width: 768px) {
+    margin: 10px auto;
   }
 
 `

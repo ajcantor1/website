@@ -4,15 +4,11 @@ import { Link as ScrollLink } from 'react-scroll'
 export const HeroContainer = styled.div`
 
   background-color: var(--navy);
-  display: flex;
-  max-height: 900px;
   min-height: 600px;
+  width: 100%;
   flex-direction: column;
+  position: relative;
 
-  @media screen and (min-width: 1400px) {
-    max-height: 1000px;
-    min-height: 900px;
-  }
 
   @media screen and (max-width: 768px) {
     max-height: 100vh;
@@ -21,13 +17,13 @@ export const HeroContainer = styled.div`
 `
 
 export const TitleContainer = styled.div`
+
   position: relative;
   display: flex;
   flex-direction: row;
   align-items: center;
   margin: auto;
-  width: 100%;
-  margin-bottom: 20%;
+ 
 
   @media screen and (max-width: 960px) {
     transition: 0.8s all ease;
@@ -35,18 +31,28 @@ export const TitleContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: auto;
-    padding: auto;   
+    padding-top: 100px
+   
   }
-  @media screen and (min-width: 1400px) {
-    margin: 120px 0;
-  }
+
 `
 export const Landing = styled.div`
- 
-  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
   @media screen and (max-width: 768px) {
-    margin: auto; 
-  }
+  
+    padding-top: 100px
+   
+  } 
+
+  @media screen and (max-width: 720px) {
+  
+  padding-top: 80px
+ 
+} 
+
+ 
 `
 
 export const Title = styled.div`
@@ -54,32 +60,32 @@ export const Title = styled.div`
   color: var(--lavender);
   font-size: 16px;
   font-weight: 600;
-  letter-spacing: -1px;
   display: grid;
-  margin: 0 auto;
-  max-width: 320px;
+
+  max-width: 280px;
+  grid-column-gap: 1px;
+  grid-row-gap: 0px;
   grid-template-rows: 16px 16px 16px;
   grid-template-columns: auto auto;
-
   @media screen and (max-width: 720px) {
-    font-size: 14px;
-    max-width: 240px;
-    grid-template-rows: 12px 12px 12px;
+   
+    grid-template-rows: 16px 16px 16px;
   }
 
 `
 
 export const LastName = styled.div`
-  line-height: 0.75;
-  font-size: 66px;
+
+  font-size: 64px;
+  line-height: 0.7;
   color: var(--neonblue);
   grid-row: 1;
   grid-row-start: 1;
   grid-row-end: span 3;
-  padding-right: 12px;
+  
 
-  @media screen and (max-width: 720px) {
-    font-size: 54px;
+  @media screen and (max-width: 768px) {
+    font-size: 62px;
     padding-right: 8px;
   }
 `
@@ -111,28 +117,24 @@ export const IconSide = styled.div`
 `
 export const CompanyDescription = styled.div`
 
-  vertical-align:middle;
-  margin: 20px auto;
-  color: var(--white);
-  font-size: 20px;
-  max-width: 500px;
 
+  color: var(--white);
+  font-size: 16px;
+  max-width: 320px;
+  margin: 20px auto; 
   @media screen and (min-width: 1400px) {
-    font-size: 20px;
-    max-width: 600px;
-    margin: 100px 0;
+    font-size: 16px;
+    max-width: 300px;
     font-weight: 600;
   }
   
   @media screen and (max-width: 768px) {
     font-size: 16px;
-    max-width: 360px;
     margin: 20px auto; 
   }
 
   @media screen and (max-width: 720px) {
     font-size: 16px;
-    max-width: 300px;
     margin-left: auto;
   }
 `
@@ -148,15 +150,14 @@ export const ServiceButton = styled(ScrollLink)`
   background-color: var(--neonblue);
   color: white;
   cursor: pointer;
-  padding: 8px 10px;
+  margin-left: 8px;
+  padding: 10px 12px;
   position: relative;
   font-family: Tomorrow, sans-serif;
-  font-size: .85rem;
+  font-size: 16px;
   text-transform: uppercase;
-  max-width: 245px;
+  max-width: 260px;
   text-align: center;
-  display: block;
-  margin:  0 auto;
   border-radius: 25px;
 
   @media screen and (min-width: 1400px) {
