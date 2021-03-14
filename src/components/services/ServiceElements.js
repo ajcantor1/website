@@ -45,11 +45,12 @@ export const WhatWeDo = styled.div`
     font-size: 1rem;
     line-height: 1em;
   }
-  @media screen and (min-width: 1400px) {
-    font-size: 2.2rem;
-    line-height: 1.2em;
-  }
 
+  @media screen and (min-width: 1400px) {
+    font-size: 2.8rem;
+    line-height: 1.2em;
+    padding: 10px 150px;
+  }
 `
 
 export const ServiceContainer = styled.div`
@@ -73,7 +74,7 @@ export const ServiceContainer = styled.div`
     flex: 1 0 60%;  
     margin: 20px 10px;
     min-width: 300px;
-    max-width: 325px;
+    max-width: 320px;
   }
 
   @media screen and (max-width: 740px) {
@@ -87,7 +88,7 @@ export const ServiceContainer = styled.div`
 export const ServiceTitle = styled.div`
   font-family: Tomorrow, sans-serif;
   margin-bottom: 10px;
-  font-size: 1rem;
+  font-size: 1.5rem;
 
   text-align: center;
   max-width: 220px;
@@ -98,23 +99,24 @@ export const ServiceTitle = styled.div`
   display: block;
 
   @media screen and (max-width: 768px) {
-    font-size: 0.8rem;
+    font-size: 1.2rem;
     max-height: 50px;
     min-height: 50px;
   }
 
   @media screen and (min-width: 1400px) {
-    font-size: 1.2rem;
-    max-height: 90px;
-    min-height: 90px;
+    font-size: 24px;
+    text-align: center;
+    max-height: 120px;
+    min-height: 120px;
+    max-width: 250px;
   }
 `
 
 export const ServiceDescription = styled.div`
   font-family: Tomorrow, sans-serif;
-  font-size: 0.7rem;
+  font-size: 1rem;
   font-weight: 500;
-  line-height: 0.7rem;
   text-align: center;
   max-height: 65px;
   min-height: 65px;
@@ -125,8 +127,8 @@ export const ServiceDescription = styled.div`
 
   @media screen and (min-width: 1400px) {
     margin-top: 10px;
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 16px;
+    line-height: 16px;
     max-width: 280px;
   }
 

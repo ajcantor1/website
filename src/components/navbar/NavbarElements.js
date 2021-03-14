@@ -5,12 +5,10 @@ import { Link as ScrollLink } from 'react-scroll'
 
 export const Nav = styled.nav`
   font-family: Tomorrow, sans-serif;
-  background-color: var(--navy);
-  
+  background-color: var(--navy); 
   box-shadow: ${({scrollNav}) => (scrollNav ? '0px 4px 4px 0px rgba(0,10,70,0.5);' :  '0px 0px 0px 0px rgba(0,10,70,0.8);')};
   height: 80px;
   display: flex;
-
   width: 100%;
   font-size: 16px;
   position: sticky;
@@ -27,7 +25,6 @@ export const Nav = styled.nav`
 
 export const Circuit = styled.div`
   
-
   flex: 1 0.9 80px;
   img {
       animation: circuitAnimate  3s linear;
@@ -98,7 +95,7 @@ export const NavLinks = styled(ScrollLink)`
   cursor: pointer;
 
   @media screen and (min-width: 1400px) {
-    padding: 0 0.5rem;
-    font-size: 1.2rem;
+    padding: 0 8px;
+    font-size: 20px;
   }
 `

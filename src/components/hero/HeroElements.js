@@ -14,6 +14,11 @@ export const HeroContainer = styled.div`
     max-height: 100vh;
     min-height: 100vh; 
   }
+
+  @media screen and (min-width: 1400px) {
+    min-height: 1080px;
+    max-height: 1080px;
+  }
 `
 
 export const TitleContainer = styled.div`
@@ -31,8 +36,7 @@ export const TitleContainer = styled.div`
 
   @media screen and (max-width: 768px) {
     margin: auto;
-    padding-top: 100px
-   
+    padding-top: 100px 
   }
 
 `
@@ -40,19 +44,19 @@ export const Landing = styled.div`
   display: flex;
   flex-direction: column;
   margin: auto;
+
   @media screen and (max-width: 768px) {
-  
     padding-top: 100px
-   
   } 
 
   @media screen and (max-width: 720px) {
+    padding-top: 80px
+  }
   
-  padding-top: 80px
- 
-} 
+  @media screen and (min-width: 1400px) {
+    padding-top: 140px
+  }
 
- 
 `
 
 export const Title = styled.div`
@@ -61,15 +65,20 @@ export const Title = styled.div`
   font-size: 16px;
   font-weight: 600;
   display: grid;
-
   max-width: 280px;
-  grid-column-gap: 1px;
+  grid-column-gap: 10px;
   grid-row-gap: 0px;
   grid-template-rows: 16px 16px 16px;
   grid-template-columns: auto auto;
+  
   @media screen and (max-width: 720px) {
-   
     grid-template-rows: 16px 16px 16px;
+  }
+
+  @media screen and (min-width: 1400px) {
+    max-width: 400px;
+    font-size: 24px;
+    grid-template-rows: 23px 22px 22px;
   }
 
 `
@@ -85,8 +94,13 @@ export const LastName = styled.div`
   
 
   @media screen and (max-width: 768px) {
-    font-size: 62px;
-    padding-right: 8px;
+    font-size: 54px;
+    margin: auto 0;
+  }
+
+  @media screen and (min-width: 1400px) {
+    font-size: 96px;
+    margin: auto
   }
 `
 export const IconSide = styled.div`
@@ -108,6 +122,13 @@ export const IconSide = styled.div`
   
   @media screen and (min-width: 1400px) {
     padding-left: 50px;
+    svg {
+          flex: 1 0 80px;  
+          min-width: 80px;
+          max-width: 80px;
+          animation: colorChange  10s ease-in-out;
+          color: var(--neonblue);
+      }
   }
 
   @media screen and (max-width: 768px) {
@@ -117,14 +138,16 @@ export const IconSide = styled.div`
 `
 export const CompanyDescription = styled.div`
 
-
   color: var(--white);
+  font-family: Tomorrow, sans-serif;
   font-size: 16px;
-  max-width: 320px;
+  max-width: 280px;
   margin: 20px auto; 
+
   @media screen and (min-width: 1400px) {
-    font-size: 16px;
-    max-width: 300px;
+    font-size: 24px;
+    margin: 32px auto;
+    max-width: 500px;
     font-weight: 600;
   }
   
@@ -151,7 +174,7 @@ export const ServiceButton = styled(ScrollLink)`
   color: white;
   cursor: pointer;
   margin-left: 8px;
-  padding: 10px 12px;
+  padding: 10px 16px;
   position: relative;
   font-family: Tomorrow, sans-serif;
   font-size: 16px;
@@ -161,11 +184,12 @@ export const ServiceButton = styled(ScrollLink)`
   border-radius: 25px;
 
   @media screen and (min-width: 1400px) {
-    font-size: 1.3rem;
-    max-width: 380px;
-    padding: 20px 16px;
+    font-size: 32px;
+    max-width: 480px;
+    padding: 16px 16px;
     font-weight: 600;
-    margin-top: 20px;
+    margin: 0 auto;
+    margin-top: 10px;
   }
 `
 
