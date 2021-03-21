@@ -191,6 +191,12 @@ export const ServiceButton = styled(ScrollLink)`
     margin: 0 auto;
     margin-top: 10px;
   }
+
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    margin-left: 0px;
+    padding: 10px 8px;
+  }
 `
 
 
