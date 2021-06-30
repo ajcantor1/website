@@ -43,7 +43,7 @@ const About = ({id}) => {
       
   return(
     <>
-      <OuterAboutContainer id={id}>
+      <OuterAboutContainer name="about" id={id}>
         <AboutContainer>
           <ProfileContainer>
 							

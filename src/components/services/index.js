@@ -74,7 +74,7 @@ const Services = ({id}) => {
     
   return(
     <>
-      <ServicesContainer id={id}>
+      <ServicesContainer name="services" id={id}>
         <ServicesFlexBox>
           {data.allFile.edges.map((image, index) => (
             <ServiceContainer>

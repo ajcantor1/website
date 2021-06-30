@@ -41,8 +41,8 @@ const Hero = () => {
               Breathing life into your Business Ideas with our Computing Wizardry and Aesthetically Pleasing Designs
             </CompanyDescription>
             <ServiceButton 
-              to='services' smooth={true} duration={700} 
-              offset={-100} spy={true} >
+              to="services" smooth={true} duration={700} 
+              offset={-200} spy={true} >
               What <i><b><u>Can</u></b></i> we do for you?
             </ServiceButton>      
       
