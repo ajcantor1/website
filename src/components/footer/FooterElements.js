@@ -15,6 +15,10 @@ export const FooterContainer = styled.a`
   font-family: Tahoma, sans-serif;
   font-size: 14px;
   font-weight: 500;
+
+  @media screen and (min-width: 1400px) {
+    font-size: 18px;
+  }
 `
 
 export const GithubStats = styled.div`

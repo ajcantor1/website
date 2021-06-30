@@ -14,17 +14,49 @@ import {
 
 const Navbar = ({toggle}) => {
 
-  const data = useStaticQuery(graphql`
+  const circuit = useStaticQuery(graphql`
     query {
-      circuit: file(relativePath: { eq: "horizontal_border_2.png" }) {
+      circuitLarge: file(relativePath: { eq: "circuit.png" }) {
         childImageSharp {
-          fixed(height: 80, width: 300) {
-            ...GatsbyImageSharpFixed
+          fixed(height: 200, width: 420) {
+              ...GatsbyImageSharpFixed
+              
+          }
+        }
+      },
+
+      circuitMedium: file(relativePath: { eq: "circuit.png" }) {
+        childImageSharp {
+          fixed(height: 120, width: 250) {
+              ...GatsbyImageSharpFixed
+          }
+        }
+      },
+
+      circuitSmall: file(relativePath: { eq: "circuit.png" }) {
+        childImageSharp {
+          fixed(height: 120, width: 250) {
+              ...GatsbyImageSharpFixed
           }
         }
       }
     }
   `);
+
+  const circuitImage = [
+    {
+        ...circuit.circuitSmall.childImageSharp.fixed,
+        media: '(max-width: 500px)',
+    },
+    {
+        ...circuit.circuitMedium.childImageSharp.fixed,
+        media: '(max-width: 900px)',
+    },
+    {
+        ...circuit.circuitLarge.childImageSharp.fixed,
+        media: '(max-width: 3840px)',
+    },
+];
   const [scrollNav, setScrollNav] = useState(false);
 
   const changeNav = () => {
@@ -41,7 +73,7 @@ const Navbar = ({toggle}) => {
     <>
       <Nav scrollNav={scrollNav}>
         <Circuit>
-          <Img fixed={data.circuit.childImageSharp.fixed} />
+          <Img fixed={circuitImage} />
         </Circuit>
         <NavContainer>
           <MobileIcon onClick={toggle}>

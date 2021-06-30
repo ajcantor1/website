@@ -133,9 +133,12 @@ export const ProfilePicture = styled(Img)`
   background-color: var(--navy);
   margin: auto 15px;
 
-
   @media screen and (max-width: 768px) {
     margin: 10px auto;
+  }
+
+  @media screen and (min-width: 1000px) {
+    margin: auto;
   }
 
 `
@@ -188,9 +191,16 @@ export const Summary = styled.div`
   max-width: 400px;
   max-height: 100px;
   font-weight: 600;
+  
+  @media screen and (min-width: 1080px) {
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+    max-width: 500px;
+    max-height: 120px;
+  }
   @media screen and (min-width: 1400px) {
-    font-size: 1rem;
-    line-height: 1rem;
+    font-size: 1.5rem;
+    line-height: 1.5rem;
     max-width: 500px;
     max-height: 120px;
   }

@@ -24,9 +24,11 @@ const IndexPage = () => {
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
       <Hero/>
-      <Services id='services'/>
-      <About id='about'/>  
+      <Services/>
+      <About/>
       <Footer/>
+  
+     
     </>
 
   );

@@ -7,7 +7,6 @@ export const Nav = styled.nav`
   font-family: Tomorrow, sans-serif;
   background-color: var(--navy); 
   box-shadow: ${({scrollNav}) => (scrollNav ? '0px 4px 4px 0px rgba(0,10,70,0.5);' :  '0px 0px 0px 0px rgba(0,10,70,0.8);')};
-  height: 80px;
   display: flex;
   width: 100%;
   font-size: 16px;
@@ -19,7 +18,7 @@ export const Nav = styled.nav`
     transition: 0.8s all ease;
   }
   @media screen and (min-width: 1400px) {
-    height: 120px;
+    min-height: 150px;
   }
 `
 
@@ -31,17 +30,22 @@ export const Circuit = styled.div`
       
   }  
   @media screen and (min-width: 1400px) {
-    width: 200px;
-    flex: 1 0 150px;
+    width: 240px;
+    flex: 1 0 300px;
+    width: 240px;
+
+
   }
 `
 
 export const NavContainer = styled.div`
   display: flex;
   justify-content: flex-end;
-  height: 80px;
+  
   z-index: 1;
   padding-right: 24px;
+
+
 
 `
 export const NavLogo = styled(Link)`
@@ -75,7 +79,8 @@ export const NavMenu = styled.ul`
   width: 100%;
   list-style: none;
   text-align: center;
-
+  align-items: center;
+  margin-right: 20px;
 
   @media screen and (max-width: 768px) {
     display: none;
@@ -83,7 +88,8 @@ export const NavMenu = styled.ul`
 `
 export const NavItem = styled.li`
   height: 80px;
-`
+
+ `
 export const NavLinks = styled(ScrollLink)`
   color: #fff;
   display: flex;
@@ -95,7 +101,7 @@ export const NavLinks = styled(ScrollLink)`
   cursor: pointer;
 
   @media screen and (min-width: 1400px) {
-    padding: 0 8px;
-    font-size: 20px;
+    padding: 0 12px;
+    font-size: 28px;
   }
 `
