@@ -6,7 +6,7 @@ import '../styles/styles.scss'
 import Hero from '@hero';
 import About from '@about';
 import Services from '@services';
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 const IndexPage = () => {
 
@@ -20,7 +20,7 @@ const IndexPage = () => {
   return(
    
     <>
-      <SEO/>
+      <Seo/>
       <Sidebar isOpen={isOpen} toggle={toggle} />
       <Navbar toggle={toggle}/>
       <Hero/>

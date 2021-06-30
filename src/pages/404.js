@@ -1,10 +1,10 @@
 import React from "react"
 import NotFound from "@notfound"
-import SEO from "../components/seo"
+import Seo from "../components/Seo"
 
 const NotFoundPage = () => (
   <>
-    <SEO title="404: Not found" />
+    <Seo title="404: Not found" />
     <NotFound/>
   </>
 )

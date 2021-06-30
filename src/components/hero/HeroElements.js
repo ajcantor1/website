@@ -129,12 +129,11 @@ export const Landing = styled.div`
   }
 
   @media screen and (min-width: 1000px) { 
-    padding: 100px 0;
+    padding: 0px 0;
     max-width: 400px;
   }
 
   @media screen and (min-width: 1200px) { 
-    padding: 0;
     max-width: 600px;
   }
 
