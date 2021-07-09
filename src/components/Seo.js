@@ -9,6 +9,7 @@ const detailsQuery = graphql`
       siteMetadata {
         title
         description
+        url
         author
         image
       }
@@ -26,7 +27,7 @@ const Seo = ({description, keywords, title, image, url, author}) => {
       const metaKeywords = keywords || ["web design", "deep learning", "software", "development"]
       return (
         <Helmet
-          title={title}
+          title={metaTitle}
           meta={[
             {
               name: `description`,
