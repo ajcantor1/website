@@ -50,14 +50,18 @@ export const TitleContainer = styled.div`
   min-width: 250px;
   margin: 0px auto;
 
+  @media screen and (min-width: 400px) {
+    margin: 0 auto;
+    min-width: 400px;
+  }
+
+
   @media screen and (min-width: 640px) {
     margin: 0 auto;
     min-width: 350px;
   }
 
-  @media screen and (min-width: 640px) {
-    margin: 0 auto;   
-  }
+
 
   @media screen and (min-width: 768px) {
     margin: auto;
@@ -124,7 +128,7 @@ export const Landing = styled.div`
 
   @media screen and (min-width: 400px) { 
     margin: auto;
-    max-width: 350px;
+    max-width: 320px;
   }
 
   @media screen and (min-width: 768px) { 
@@ -226,10 +230,10 @@ export const CompanyDescription = styled.div`
   font-family: Tomorrow, sans-serif;
   text-align: justify;
   font-size: 14px;
-  margin: 10px 5px;
+  margin: 5px 5px;
 
   @media screen and (min-width: 400px) {
-    font-size: 18px;
+    font-size: 17px;
     width: 305px;
     padding-top: 5px;
     margin: 10px 0 5px 10px;
@@ -279,7 +283,7 @@ export const ServiceButton = styled(ScrollLink)`
 
   @media screen and (min-width: 400px) {
     font-size: 16px;
-    width: 300px;
+    width: 315px;
     margin-left: 10px;
     
   } 
