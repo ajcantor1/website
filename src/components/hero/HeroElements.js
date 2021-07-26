@@ -6,23 +6,35 @@ export const MainContainer = styled.div`
   width: 100%;
   position: relative;
   min-width: 100vw;
-  min-height: 100vh;  
+  height: 600px;
+  max-height: 700px;  
+
+  @media screen and (min-height: 800px) {
+    height: 800px;
+    min-height: 800px;  
+  }
+  @media screen and (min-width: 768px) {
+    height: 100vh;
+    min-height: 100vh;  
+  }
 `
 
 export const OuterTitleContainer = styled.div`
-  height: 100vh;
+
   top: 0%;
   transition: 0.8s all ease;
   position: relative;
+
   @media screen and (min-width: 768px) {
     position: absolute;
     left: 20%;
+    top: 20%;
     width: 80%;
-    height: 100%;
   }
 
   @media screen and (min-width: 900px) {
     position: absolute;
+    top: 5%;
     left: 20%;
     width: 70%;
     height: 100%;
@@ -32,37 +44,24 @@ export const OuterTitleContainer = styled.div`
 export const TitleContainer = styled.div`
   min-width: 250px;
   width: 90%;
-  max-width: 320px;
   margin: 0px auto;
-
-
-  @media screen and (min-width: 400px) {
-    max-width: 380px;
-  }
-
 
   @media screen and (min-width: 640px) {
     margin: 0 auto;   
   }
 
   @media screen and (min-width: 768px) {
-    margin: 250px auto;
-    
+    margin: auto;
   }
-
 
   @media screen and (min-width: 1000px) {
     padding: 140px 0;
-    margin: 0px auto;
-    max-width: 400px;
+    margin: auto;
   }
-
  
-
   @media screen and (min-width: 1300px) {
-    margin-left: 200px;
-    max-width: 600px; 
-    margin: 20px auto;
+    margin: auto;
+    width: 800px;
   }
 
 `
@@ -112,33 +111,31 @@ export const Landing = styled.div`
   height: 500px;
   margin: auto;
   padding: 100px 0;
-  max-width: 300px;
+  max-width: 250px;
 
   @media screen and (min-width: 400px) { 
-    max-width: 320px;
     margin: auto;
+    max-width: 350px;
   }
 
   @media screen and (min-width: 768px) { 
-    padding: 10px 0;
+  
+    max-width: 320px;
   }
 
-  @media screen and (min-width: 1280px) { 
-    max-width: 400px;
-    padding: 0px 0;
-  }
+
 
   @media screen and (min-width: 1000px) { 
     padding: 0px 0;
     max-width: 400px;
   }
 
-  @media screen and (min-width: 1200px) { 
-    max-width: 600px;
-  }
+ 
 
   @media screen and (min-width: 1920px) { 
     padding: 0px 0;
+    max-width: 600px;
+    padding: 50px;
   
   }
 `
@@ -147,7 +144,6 @@ export const Title = styled.div`
   font-family: Tahoma, sans-serif;
   color: var(--lavender);
   display: grid;
-
   max-width: 280px;
   grid-column-gap: 3px;
   grid-row-gap: 0px;
@@ -155,21 +151,16 @@ export const Title = styled.div`
   
   font-weight: 800;
   margin-bottom: 0.5rem;
-  font-size: 1.2rem;
-  grid-template-rows: 1.3rem 1.3rem 1.3rem;
-
+  font-size: 14px;
+  grid-template-rows: 1rem 1rem 1rem;
+  min-height: 52px;
   >div{
     margin-top: 1.4rem;
   }
 
   @media screen and (min-width: 400px) {
-    max-width: 320px;
-
-    >div{
-      margin-top: 1.5rem;
-    }
-      font-size: 1.4rem;
-      grid-template-rows: 1.4rem 1.4rem 1.4rem;
+    font-size: 1.2rem;
+    grid-template-rows: 1.2rem 1.2rem 1.2rem;
   }
 
   @media screen and (min-width: 1000px) {
@@ -177,6 +168,7 @@ export const Title = styled.div`
     min-width: 400px;
     >div{
       margin-top: 1.5rem;
+      margin-left: 4px;
     }
       font-size: 1.8rem;
       grid-template-rows: 1.6rem 1.6rem 1.6rem;
@@ -203,10 +195,11 @@ export const LastName = styled.div`
   grid-row: 1;
   grid-row-start: 1;
   grid-row-end: span 3;  
-  font-size: 5rem;
+  font-size: 52px;
 
   @media screen and (min-width: 400px) {
     font-size: 6rem;
+    line-height: 0.6;
   }
 
   @media screen and (min-width: 1000px) {
@@ -223,31 +216,29 @@ export const CompanyDescription = styled.div`
   font-family: Tomorrow, sans-serif;
   text-align: justify;
   font-size: 14px;
+  margin: 10px 5px;
 
-  margin: 2rem 0.5rem;
-  min-width: 250px;
-  max-width: 250px;  
-  
   @media screen and (min-width: 400px) {
-    min-width: 300px;
-    max-width: 310px;  
     font-size: 18px;
+    width: 305px;
+    padding-top: 5px;
+    margin: 10px 0 5px 10px;
   }
 
-  @media screen and (min-width: 768px) {
-    margin: 3rem 0.5rem;
+  @media screen and (min-width: 768px) { 
+    margin: 15px 5px 10px 9px;
+    width: 305px;
   }
-
   @media screen and (min-width: 1000px) {
     font-size: 1.8rem;
-    min-width: 380px;
-    max-width: 380px;  
+    width: 380px;
+    margin: 15px 5px 10px 8px;
   }
 
   @media screen and (min-width: 1300px) {
     font-size: 2.5rem;
-    min-width: 540px;
-    max-width: 540px;  
+    width: 520px;
+    margin: 25px 5px 15px 15px;
   }
 
 `
@@ -270,35 +261,37 @@ export const ServiceButton = styled(ScrollLink)`
   font-weight: 600;
   border-radius: 10px;
   font-size: 1.3rem;
+  display: block;
+  padding: 12px 0px;
+  margin: auto;
   width: 100%;
-  padding: 12px 24px;
-  min-width: 300px;
-  margin-left: 4px;
+  margin-left: 2px;
+
   @media screen and (min-width: 400px) {
     font-size: 16px;
-    padding: 12px 40px;
+    width: 310px;
+    margin-left: 10px;
     
   } 
 
   @media screen and (min-width: 768px) {
-    padding: 12px 26px;
+    margin-left: 10px;
     font-size: 18px;
+    width: 305px;
 
   }
 
   @media screen and (min-width: 1000px) {
     font-size: 1.8rem;
-    padding: 14px 36px;
+    padding: 14px 0;
     margin-left: 6px;
-    width: 480px;
-    min-width: 480px;
-    max-width: 490px;  
+    width: 385px;
   }
 
-  @media screen and (min-width: 1300px) {
+  @media screen and (min-width: 1400px) {
     font-size: 2.8rem;
-    min-width: 540px;
-    max-width: 540px;  
-    padding: 14px 36px;
+    margin-left: 10px;
+    width: 545px;
+    padding: 14px 0px;
   }
 `
