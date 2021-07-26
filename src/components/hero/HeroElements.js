@@ -9,6 +9,11 @@ export const MainContainer = styled.div`
   height: 600px;
   max-height: 700px;  
 
+  @media screen and (min-height: 700px) {
+    height: 700px;
+    min-height: 700px;  
+  }
+
   @media screen and (min-height: 800px) {
     height: 800px;
     min-height: 800px;  
@@ -43,7 +48,6 @@ export const OuterTitleContainer = styled.div`
 
 export const TitleContainer = styled.div`
   min-width: 250px;
-  width: 90%;
   margin: 0px auto;
 
   @media screen and (min-width: 640px) {
@@ -166,6 +170,7 @@ export const Title = styled.div`
   @media screen and (min-width: 400px) {
     font-size: 16px;
     grid-template-rows: 16px 16px 16px;
+    margin-left: 2px;
   }
 
   @media screen and (min-width: 1000px) {
