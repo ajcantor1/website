@@ -47,6 +47,11 @@ export const TitleContainer = styled.div`
   margin: 0px auto;
 
   @media screen and (min-width: 640px) {
+    margin: 0 auto;
+    min-width: 350px;
+  }
+
+  @media screen and (min-width: 640px) {
     margin: 0 auto;   
   }
 
@@ -159,7 +164,7 @@ export const Title = styled.div`
   }
 
   @media screen and (min-width: 400px) {
-    font-size: 1.2rem;
+    font-size: 1.35rem;
     grid-template-rows: 1.2rem 1.2rem 1.2rem;
   }
 
