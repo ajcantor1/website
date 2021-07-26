@@ -164,8 +164,8 @@ export const Title = styled.div`
   }
 
   @media screen and (min-width: 400px) {
-    font-size: 1.35rem;
-    grid-template-rows: 1.2rem 1.2rem 1.2rem;
+    font-size: 16px;
+    grid-template-rows: 16px 16px 16px;
   }
 
   @media screen and (min-width: 1000px) {
