@@ -8,6 +8,14 @@ import About from '@about';
 import Services from '@services';
 import Seo from "../components/Seo"
 
+
+const homePage = {
+  height: '100vh',
+  maxHeight: '100vh',
+  display: 'flex',
+  flexDirection: 'column'
+};
+
 const IndexPage = () => {
 
   const [isOpen, setIsOpen] = useState(false);
@@ -22,8 +30,10 @@ const IndexPage = () => {
     <>
       <Seo/>
       <Sidebar isOpen={isOpen} toggle={toggle} />
-      <Navbar toggle={toggle}/>
-      <Hero/>
+      <div style={homePage}>
+        <Navbar toggle={toggle}/>
+        <Hero/>
+      </div>
       <Services/>
       <About/>
       <Footer/>

@@ -32,11 +32,11 @@ const Hero = () => {
 
             <Landing>
               <Title>
-              <LastName>Cantor</LastName>
-              <div>Computing</div>
-              <div>&</div>
-              <div>Design</div>
-            </Title>
+                <LastName>Cantor</LastName>
+                <div>Computing</div>
+                <div>&</div>
+                <div>Design</div>
+              </Title>
             <CompanyDescription>
               Breathing life into your Business Ideas with our Computing Wizardry and Aesthetically Pleasing Designs
             </CompanyDescription>
@@ -49,16 +49,17 @@ const Hero = () => {
             </Landing>
 
           </TitleContainer>
-        </OuterTitleContainer>
-      <IconSide>
-          <IconContainer>
-            <IconCodepen/>
-            <IconStackOverflow/>
-            <IconGitHub/>
-            <IconLinkedin/>
-            <IconInstagram/>
-          </IconContainer>
-        </IconSide>
+        
+          <IconSide>
+              <IconContainer>
+                <IconCodepen/>
+                <IconStackOverflow/>
+                <IconGitHub/>
+                <IconLinkedin/>
+                <IconInstagram/>
+              </IconContainer>
+            </IconSide>
+            </OuterTitleContainer>
       </MainContainer>
     </>
       
