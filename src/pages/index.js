@@ -38,7 +38,6 @@ const IndexPage = () => {
       <About/>
       <Footer/>
   
-     
     </>
 
   );
