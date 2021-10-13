@@ -84,9 +84,7 @@ export const Landing = styled.div`
     margin: auto 25%;
     width: 600px;
   }
-
 `
-
 export const Title = styled.div`
   font-family: Tahoma, sans-serif;
   color: var(--lavender);
