@@ -122,7 +122,8 @@ export const Title = styled.div`
     font-size: 20px;
   }
 
-  @media screen and (min-width: 1200px) {
+
+  @media screen and (min-width: 1400px) {
     grid-template-rows: 24px 24px 24px;
     font-size: 24px;
     margin: auto;
@@ -174,10 +175,7 @@ export const LastName = styled.div`
     font-size: 72px;
     line-height: 0.8;
   }
-  @media screen and (min-width: 1200px) {
-    font-size: 84px;
-    line-height: 0.7;
-  }
+
   @media screen and (min-width: 1400px) {
     font-size: 100px;
     line-height: 0.6;
