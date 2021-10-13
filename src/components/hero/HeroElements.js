@@ -175,7 +175,7 @@ export const LastName = styled.div`
     line-height: 0.8;
   }
   @media screen and (min-width: 1200px) {
-    font-size: 92px;
+    font-size: 84px;
     line-height: 0.7;
   }
   @media screen and (min-width: 1400px) {
