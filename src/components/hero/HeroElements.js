@@ -51,7 +51,7 @@ export const IconContainer = styled.div`
     svg {
       min-width: 60px;
       max-width: 60px;
-      margin: 5% 0;
+      margin: 2.5% 0;
     }
   }
 
