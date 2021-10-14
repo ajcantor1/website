@@ -47,6 +47,14 @@ export const IconContainer = styled.div`
     color: var(--neonblue);
   }
 
+  @media screen and (min-width: 1200px) {
+    svg {
+      min-width: 70px;
+      max-width: 70px;
+      margin: 10px 0;
+    }
+  }
+
   @media screen and (min-width: 1300px) {
     svg {
       min-width: 100px;
