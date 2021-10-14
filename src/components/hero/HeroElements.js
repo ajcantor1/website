@@ -49,9 +49,9 @@ export const IconContainer = styled.div`
 
   @media screen and (min-width: 1200px) {
     svg {
-      min-width: 70px;
-      max-width: 70px;
-      margin: 10px 0;
+      min-width: 60px;
+      max-width: 60px;
+      margin: 5% 0;
     }
   }
 
