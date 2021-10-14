@@ -117,6 +117,16 @@ export const Title = styled.div`
     font-size: 18px;
   }
 
+  @media screen and (min-width: 550px) {
+    grid-template-rows: 21px 21px 21px;
+    font-size: 21px;
+  }
+
+  @media screen and (min-width: 600px) {
+    grid-template-rows: 22px 22px 22px;
+    font-size: 22px;
+  }
+
   @media screen and (min-width: 768px) {
     grid-template-rows: 20px 20px 20px;
     font-size: 20px;
@@ -140,7 +150,8 @@ export const LastName = styled.div`
   grid-row-end: span 3;  
   font-size: 48px;
   line-height: 0.7;
-
+  letter-spacing: 0.1em;
+  font-weight: 900;
   @media screen and (min-width: 360px) {
     font-size: 54px;
     line-height: 0.6;
@@ -151,9 +162,9 @@ export const LastName = styled.div`
     line-height: 0.7;
   }
 
-  @media screen and (min-width: 410px) {
+  @media screen and (min-width: 400px) {
     font-size: 60px;
-    line-height: 0.8;
+    line-height: 0.7;
   }
 
   @media screen and (min-width: 440px) {
@@ -171,9 +182,24 @@ export const LastName = styled.div`
     line-height: 0.7;
   }
 
+  @media screen and (min-width: 520px) {
+    font-size: 80px;
+    line-height: 0.6;
+  }
+
+  @media screen and (min-width: 550px) {
+    font-size: 84px;
+    line-height: 0.6;
+  }
+
+  @media screen and (min-width: 600px) {
+    font-size: 92px;
+    line-height: 0.7;
+  }
+
   @media screen and (min-width: 768px) {
-    font-size: 72px;
-    line-height: 0.8;
+    font-size: 74px;
+    line-height: 0.7;
   }
 
   @media screen and (min-width: 1400px) {
