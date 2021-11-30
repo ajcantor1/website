@@ -45,6 +45,7 @@ export const IconContainer = styled.div`
     max-width: 80px;
     animation: colorChange  10s ease-in-out;
     color: var(--neonblue);
+
   }
 
   @media screen and (min-width: 1200px) {
@@ -59,6 +60,13 @@ export const IconContainer = styled.div`
     svg {
       min-width: 100px;
       max-width: 100px;
+    }
+  }
+
+  @media screen and (min-width: 2400px) {
+    svg {
+      min-width: 150px;
+      max-width: 150px;
     }
   }
 `
@@ -150,7 +158,6 @@ export const Title = styled.div`
 `
 
 export const LastName = styled.div`
-
 
   color: var(--neonblue);
   grid-row: 1;
