@@ -6,7 +6,6 @@ export const MainContainer = styled.div`
   width: 100%;
   display: flex;
   flex: 1;
-
 `
 
 export const OuterTitleContainer = styled.div`
@@ -32,7 +31,6 @@ export const IconSide = styled.div`
 export const IconContainer = styled.div`
   width: 100%;
   display: flex;
-  
   justify-content: center;
   align-items: center;
   flex-direction: column;
@@ -58,6 +56,15 @@ export const IconContainer = styled.div`
 
   @media screen and (min-width: 1300px) {
     svg {
+      margin: 1% 0;
+      min-width: 65px;
+      max-width: 65px;
+    }
+  }
+
+  @media screen and (min-width: 1600px) {
+    svg {
+      margin: 1% 0;
       min-width: 100px;
       max-width: 100px;
     }
@@ -83,7 +90,6 @@ export const TitleContainer = styled.div`
   
 `
 
-
 export const Landing = styled.div`
   display: flex;
   flex-direction: column;
@@ -95,6 +101,7 @@ export const Landing = styled.div`
     margin: auto;
     width: 480px;
   }
+
 
   @media screen and (min-width: 1500px) {
     margin: auto 25%;

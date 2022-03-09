@@ -68,10 +68,6 @@ const Services = ({id}) => {
     }
   ]
 
-
-
-
-    
   return(
     <>
       <ServicesContainer name="services" id={id}>

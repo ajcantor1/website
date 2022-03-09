@@ -62,8 +62,6 @@ const Hero = () => {
             </OuterTitleContainer>
       </MainContainer>
     </>
-      
-    
   );
   
 }

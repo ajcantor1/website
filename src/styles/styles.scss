@@ -10,11 +10,13 @@ html {
 :root {
     --cyan: #0272a6;
     --navy:  #00171F;
+    --jet:  #252525;
     --neonblue: #56A7D3;
     --gray: #697268;
     --lavender: #9689a8;
     --white: #fff;
     --transparent: transparent;
+    --offwhite: #ebf3f6;
 }
 html, body {
     margin: 0;
@@ -57,4 +59,16 @@ html, body {
     85% { transform: rotate(-2deg) scale(1.1); }
     92% { transform: rotate(1deg) scale(1.05); }
     100% { transform: rotate(0) scale(1); }
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.text-align-center {
+    text-align: center;
+}
+
+.text-align-left {
+    text-align: left;
 }
