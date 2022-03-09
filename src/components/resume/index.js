@@ -1,6 +1,5 @@
 import React, {useState, useEffect } from "react"
 import {ArrowBackCircle} from '@styled-icons/ionicons-solid'
-import ReactToPdf from "react-to-pdf"
 import {
     OuterContainer,
     SideContainer,
@@ -89,11 +88,7 @@ const Resume = () => {
 
   return(
     <>
-        <ReactToPdf targetRef={ref} filename="jeremy-cantor-resume.pdf">
-        {({toPdf}) => (
-            <button onClick={toPdf}>Generate pdf</button>
-        )}
-    </ReactToPdf>
+
       <OuterContainer ref={ref}>
         <SideContainer>
             <SideHeaderContainer>
