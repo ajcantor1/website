@@ -115,7 +115,7 @@ const Hero = () => {
               <li>Not a switch emulator but a code example for making a single page with ReactJS</li>
               <li>Code and images used are not authorized nor endorsed by Nintendo or in anyway</li>
               <li>Demo: <a href="https://amiibo-selector.herokuapp.com/" rel="nofollow">https://amiibo-selector.herokuapp.com/</a></li>
-              <li>Source code: <a href="https://github.com/ajcantor1/wordle-bot" rel="nofollow">https://github.com/ajcantor1/wordle-bot</a></li>
+              <li>Source code: <a href="https://github.com/ajcantor1/amiibo_selector" rel="nofollow">https://github.com/ajcantor1/amiibo_selector</a></li>
             </PortfolioDetails>
           </PortfolioDescription>
         </PortfolioBox>
