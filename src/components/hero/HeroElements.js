@@ -146,8 +146,6 @@ export const PortfolioDescription = styled.div`
 `
 
 export const PortfolioImage = styled.img`
-
-
 `
 
 export const PortfolioDetails = styled.ul`
@@ -155,8 +153,10 @@ export const PortfolioDetails = styled.ul`
   font-size: 22px;
   margin: 0;
   text-align: left;
+
   a {
     color: var(--cyan);
+    word-wrap:break-word;
   }
   li {
     margin: 20px ;
