@@ -131,6 +131,10 @@ export const PortfolioBox = styled.div`
     }
   }
 
+  &.row-direction {
+    flex-direction: column;
+  }
+
 `
 
 export const PortfolioDescription = styled.div`
@@ -153,7 +157,6 @@ export const PortfolioDetails = styled.ul`
   font-size: 22px;
   margin: 0;
   text-align: left;
-  max-width: 200px;
 
   a {
     color: var(--cyan);

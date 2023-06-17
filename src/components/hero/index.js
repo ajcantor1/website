@@ -63,7 +63,7 @@ const Hero = () => {
       <NameLine/>
       <PortfolioSection>
 
-      <PortfolioBox>
+      <PortfolioBox className="row-direction">
           <PortfolioImage src={thesis}/>
           <PortfolioDescription>
             <PortfolioTitle>
