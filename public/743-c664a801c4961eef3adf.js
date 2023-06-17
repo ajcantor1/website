@@ -1,2 +1,0 @@
-(self.webpackChunkgatsby_starter_default=self.webpackChunkgatsby_starter_default||[]).push([[743],{5837:function(a,t,e){e(2109)({global:!0},{globalThis:e(7854)})},5743:function(a,t,e){e(5837)}}]);
-//# sourceMappingURL=743-c664a801c4961eef3adf.js.map
