@@ -39,7 +39,7 @@ const Hero = () => {
       <Name>Jeremy Cantor</Name>
       <NameLine/>
       <Description>
-        Hi there, I'm Jeremy. Electrical Engineer and Software Developer. I create things that live on the internet, from websites, applications, or anything in between. My interest are broad and cover are variety of bleeding edge topics in computing.
+      Hi there, I'm Jeremy. Electrical Engineer and Software Developer. I create things that live on the internet, from websites, applications, or anything in between. My interest are broad and cover a variety of bleeding-edge topics in computing.
       </Description> 
       <ServiceContainer>
         <ServiceBox>
@@ -61,6 +61,21 @@ const Hero = () => {
       <Portfolio>Portfolio</Portfolio>
       <NameLine/>
       <PortfolioSection>
+
+      <PortfolioBox>
+          <PortfolioImage src={detection}/>
+          <PortfolioDescription>
+            <PortfolioTitle>
+              Master's Thesis
+            </PortfolioTitle>
+            <PortfolioDetails>
+              <li>A Lightweight Deep Recurrent Q-Learning Technique for Autonomous Wildfire Surveillance</li>
+              <li>Paper submitted to the European Conference of Artificial Intelligence. <a href="https://www.overleaf.com/read/qqqhbcnvzbvn" rel="nofollow">View as PDF</a></li>
+              <li>Source code: <a href="https://github.com/ajcantor1/wildfire_uav_surveillance_rl" rel="nofollow">https://github.com/ajcantor1/wildfire_uav_surveillance_rl</a></li>
+            </PortfolioDetails>
+          </PortfolioDescription>
+        </PortfolioBox>
+
         <PortfolioBox>
           <PortfolioImage src={detection}/>
           <PortfolioDescription>
@@ -68,8 +83,8 @@ const Hero = () => {
               Image/Hair Segmentation
             </PortfolioTitle>
             <PortfolioDetails>
-              <li>Train a convolutional residual network to determine if a particle pixel is hair</li>
-              <li>Perform an average over hair-pixel to determine hair color and/or recommend based on hair color</li>
+              <li>Trained a convolutional residual network for hair segmentation</li>
+              <li>Perform an average over hair-pixels to determine hair color and/or recommend based on hair color</li>
               <li>Proposed Architecture Courtesy of: <a href="https://arxiv.org/pdf/1712.07168.pdf" rel="nofollow">Alex Levinshtein, Cheng Chang, Edmund Phung,Irina Kezele, Wenzhangzhi Guo, Parham Aarabi</a></li>
               <li>Source code: <a href="https://github.com/ajcantor1/hair_segmentation_cnn" rel="nofollow">https://github.com/ajcantor1/hair_segmentation_cnn</a></li>
             </PortfolioDetails>
