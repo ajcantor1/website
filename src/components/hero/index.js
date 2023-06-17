@@ -64,7 +64,6 @@ const Hero = () => {
       <PortfolioSection>
 
       <PortfolioBox className="row-direction">
-          <PortfolioImage src={thesis}/>
           <PortfolioDescription>
             <PortfolioTitle>
               Master's Thesis
@@ -74,6 +73,7 @@ const Hero = () => {
               <li>Paper submitted to the European Conference of Artificial Intelligence. <a href="https://www.overleaf.com/read/qqqhbcnvzbvn" rel="nofollow">View as PDF</a></li>
               <li>Source code: <a href="https://github.com/ajcantor1/wildfire_uav_surveillance_rl" rel="nofollow">https://github.com/ajcantor1/wildfire_uav_surveillance_rl</a></li>
             </PortfolioDetails>
+            <PortfolioImage src={thesis}/>
           </PortfolioDescription>
         </PortfolioBox>
 
