@@ -23,6 +23,7 @@ import profile from '../../images/Jprofile.png';
 import brain from '../../images/brain.png';
 import arduino from '../../images/arduino.png';
 import devices from '../../images/devices.png';
+import thesis from '../../images/thesis.gif';
 import detection from '../../images/detection.png';
 import seaquest from '../../images/seaquest.gif';
 import wordle_bot from '../../images/wordle_bot.gif';
@@ -63,7 +64,7 @@ const Hero = () => {
       <PortfolioSection>
 
       <PortfolioBox>
-          <PortfolioImage src={detection}/>
+          <PortfolioImage src={thesis}/>
           <PortfolioDescription>
             <PortfolioTitle>
               Master's Thesis
@@ -76,7 +77,7 @@ const Hero = () => {
           </PortfolioDescription>
         </PortfolioBox>
 
-        <PortfolioBox>
+        <PortfolioBox className="reverse">
           <PortfolioImage src={detection}/>
           <PortfolioDescription>
             <PortfolioTitle>
@@ -91,7 +92,7 @@ const Hero = () => {
           </PortfolioDescription>
         </PortfolioBox>
 
-        <PortfolioBox className="reverse">
+        <PortfolioBox>
         <PortfolioImage src={seaquest}/>
           <PortfolioDescription>
             <PortfolioTitle>
@@ -105,7 +106,7 @@ const Hero = () => {
           </PortfolioDescription>
         </PortfolioBox>
 
-        <PortfolioBox>
+        <PortfolioBox className="reverse">
         <PortfolioImage src={wordle_bot}/>
           <PortfolioDescription>
             <PortfolioTitle>
@@ -120,7 +121,7 @@ const Hero = () => {
           </PortfolioDescription>
         </PortfolioBox>
 
-        <PortfolioBox className="reverse">
+        <PortfolioBox>
         <PortfolioImage src={switchgame}/>
           <PortfolioDescription>
             <PortfolioTitle>
