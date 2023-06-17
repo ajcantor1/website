@@ -74,7 +74,6 @@ const Hero = () => {
               <li>Source code: <a href="https://github.com/ajcantor1/wildfire_uav_surveillance_rl" rel="nofollow">https://github.com/ajcantor1/wildfire_uav_surveillance_rl</a></li>
             </PortfolioDetails>
           </PortfolioDescription>
-          <PortfolioImage src={thesis}/>
         </PortfolioBox>
 
         <PortfolioBox className="reverse">
