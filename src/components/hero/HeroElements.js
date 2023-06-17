@@ -153,6 +153,7 @@ export const PortfolioDetails = styled.ul`
   font-size: 22px;
   margin: 0;
   text-align: left;
+  max-width: 200px;
 
   a {
     color: var(--cyan);
